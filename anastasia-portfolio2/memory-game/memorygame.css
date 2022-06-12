@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    --hidden: #dfe6e9;
+}
+
+body {
+    background-color: #dfe6e9;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+header h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    
+}
+
+.hidden {
+    background-color: grey;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 100;
+    opacity: 0;
+
+}
+
+.hidden.active {
+    opacity: 1;
+}
+
+.remove {
+    display: none;
+}
+
+.click.active{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 225px;
+    width: 230px;
+    border:none;
+    color: #a29bfe;
+    background-color: #a29bfe;
+    opacity: 1;
+}
+.click.active:hover {
+    transform: scale(1.02);
+}
+
+.click{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border:none;
+    color: #a29bfe;
+    background-color: #a29bfe;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+
+.card img{
+    height: 225px;
+    width: 225px;
+    width: 100;
+    margin: 3px 5px;
+    overflow: hidden;
+}
+
+
+.score {
+    font-weight: 400;
+}
+
+#score-container {
+    position: absolute;
+    left: 475px;
+    top:670px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+form input {
+    height: 50px;
+    width: 200px;
+    background-color: #a29bfe;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+}
+form input:hover {
+    transform: scale(1.05);
+}
+
+.win-screen.active {
+    position: absolute;
+    left: 27%;
+    top: 30%;
+    text-align: center;
+    background-color: #a29bfe;
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    opacity: 1;
+    z-index: 999;
+}
+.win-screen {
+    z-index: -999;
+    opacity: 0;
+}
+
+.win-header.active {
+    margin-top: 5rem;
+    opacity: 1;
+    z-index: 999;
+}
+.win-header {
+    z-index: -999;
+    opacity: 0;
+}
+
+
+.win-text.active {
+    font-size: 25px;
+    opacity: 1;
+    z-index: 999;
+}
+.win-text {
+    z-index: -999;
+    opacity: 0;
+}
+
+
+.win-btn.active{
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #dfe6e9;
+    opacity: 1;
+    z-index: 999;
+}
+
+.win-btn {
+    z-index: -999;
+    opacity: 0;
+}
+
+
+.win-btn.active:hover{
+    transform: scale(1.03)
+}
