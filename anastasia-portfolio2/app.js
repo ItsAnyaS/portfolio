@@ -4,9 +4,14 @@ const darkModeBtn = document.querySelector('.navbar__btn')
 const body = document.querySelector('body')
 const nav = document.querySelector('.navbar')
 const navlink = document.getElementsByClassName('navbar__item')
+const navbarLink = document.querySelectorAll('.navbar__links')
 const messageArr = ['Anastasia Sirman'];
 var textposition = 0;
 const speed = 150;
+toggleNavBar = () => {
+    menu.classList.toggle('is-active');
+    menulinks.classList.toggle('active');
+}
 
 typewriter = () => {
     document.querySelector('.main__header').innerHTML = messageArr[0].substring(0,textposition) + '<span class="blink">|</span>';
@@ -29,6 +34,7 @@ darkModeBtn.addEventListener('click', () => {
     nav.classList.toggle('dark')
     navlink.classList.toggle('dark')
 })
+
 
 
 

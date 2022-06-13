@@ -26,6 +26,7 @@ body {
     border-left-width: 5px;
     border-right-style: solid;
     border-right-width: 5px;
+    overflow-x: hidden;
 }
 /*============
 =======Navbar====
@@ -319,6 +320,12 @@ height: 75vh;
         height: 130vh;
     
     }
+
+.about__content {  
+    margin: 10rem 5rem;
+    text-align: center;
+
+}
     
 }
 
@@ -504,18 +511,51 @@ height: 75vh;
 
 @media screen and (max-width: 900px) {
 
-    .projects {
+    .projects__container {
         margin-top: 1rem;
-    
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
     }
+  
+
+    .projects__card1 {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+       
+    }
+
+    .projects__card2 {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    .projects__card3 {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    .projects__card4 {
+        align-self: center;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+    }
+
+
   
 }
 
-@media screen and (max-width: 700px) {
-
-
-   
-}
+ 
 
 /*============
 =======Contact====
