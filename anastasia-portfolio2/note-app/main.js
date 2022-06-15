@@ -11,7 +11,7 @@ const seeAllBtn = document.querySelector("#see-all-btn");
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const note = input.value;
-
+    input.value = ''
     if (!note) {
         alert("Please type something");
         return;
@@ -58,9 +58,11 @@ form.addEventListener('submit', (e) => {
             modell.classList.remove('is-active');
             modellPar.classList.remove('is-active');
             modellBtn.classList.remove('is-active');  
+
+
         })
     })
-
+    
 })
 
 })
