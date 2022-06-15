@@ -1,7 +1,8 @@
 * {
     box-sizing:border-box;
     font-family: 'Kumbh Sans', sans-serif;
-    --accent-color: #3ECA48;
+    --accent-color: #00a8ff;
+    background-color: #f5f6fa;
 }
 
 .topper {
@@ -50,7 +51,7 @@ label {
 #note-input {
     appearance: none;
     border-radius: 5px;
-    background-color:white;
+    background-color:#f5f6fa;
     height:50px;
     width: 300px;
     border-width: 1px;
@@ -116,17 +117,18 @@ label {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    background-color: transparent;
 }
 
 .note-btn {
     margin-top: 0.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 5px 10px;
     position: absolute;
     margin-top: -13px;
     margin-left: -160px;
-    background-color: #4564FF;
+    background-color: var(--accent-color);
     color: #fff;
     font-weight: 100;
 
@@ -142,8 +144,14 @@ label {
     position: absolute;
     margin-top: -65px;
     margin-left: 150px;
+    background-color: transparent;
+    border: none;
     color: black;
     padding: 0.5px;
+}
+
+.delete-note-btn:hover{
+    transform: scale(1.15);
 }
 
 
@@ -160,12 +168,19 @@ label {
     opacity: 0;
     z-index: -99;
     position: absolute;
+    border: none;
+    background-color: transparent;
+}
+
+#modell-btn:hover{
+    transform: scale(1.15);
 }
 
 #modell-par{
     opacity: 0;
     z-index: -99;
     position: absolute;
+    background-color: transparent;
 }
 
 
@@ -189,7 +204,7 @@ label {
     z-index: 99;
     opacity: 1;
     position: absolute;
-    background-color: #E7E5E2;
+    background-color: #e0e5ec;
     height: 150px;
     width: 750px;
     display: grid;
