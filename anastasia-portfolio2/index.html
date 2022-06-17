@@ -1,121 +1,669 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="icon" type="img/png" href="/images/anastasia-logo.png">
-    <title>Home</title>
-</head>
-<body  id="home__link">
-    <nav class="navbar">
-        <div class="navbar__container">
-           <!-- <a href="/" id="navbar__logo"><img src="images/logo-small1.png" alt="" class="logo"></a>-->
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-               
-                <li class="navbar__item">
-                    <a href="#home__link" class="navbar__links dark-text" onclick="toggleNavBar()">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about__link" class="navbar__links" onclick="toggleNavBar()">
-                        About   
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#projects__link" class="navbar__links" onclick="toggleNavBar()">
-                        Projects  
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#contact__link" class="navbar__links" onclick="toggleNavBar()">
-                        Contact me   
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <ion-icon name="invert-mode-outline"></ion-icon>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="main" id="main__link">
-        <div class="main__container">
-            <div class="main__content">
-                <div class="main__stack"><h1 class="main__header"></h1>
-                <h2 class="main__header2">Software Engineer</h2>
-                <p class="main_par">I am a Software Engineer who <span class="you">loves </span>everything<br>computer science. From frontend to backend I love the proccess of<br> creation and re-engineering.</p>
-            </div> 
-              <!-- <img src="images/headshot.png" alt="A animated photo of Anastasia Sirman" class="main__img" >--> 
-            </div>
-        </div>
-    </div>
+*{
+    font-family: 'Manrope', sans-serif;
+    --accent-color: #8C84FF;
+    --background-color: #F5FCFF ;
+    --nav-text-color: black;
+    box-sizing: border-box;
+    --dark-mode-main-color:black;
+    --dark-mode-text-color:#F5FCFF;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+}
 
-<div class="about">
-    <div class="about__container" id="about__link">
-        <div class="about__content">
-            <h1 class="about__header">About Me</h1>
-            <p class="about__par">I fell in love with <span class="functionality">programing</span> at a young age like many others playing video games.  I later realized that <span class="functionality">problem solving </span>and programing was a true calling and started studying everything I could get my hands on.</p>
-        </div>
-    </div>
-</div>
-<div class="most__recent__projects"><h1 class="projects__header">Recent Projects</h1></div>
-    <div class="projects" id="projects__link">
-        <div class="projects__container">
-                <div class="projects__card1">
-                    <h1 class="projects__card--header">Note Taking App</h1>
-                    <p class="projects__card--par">A note taking app that can add notes to a dashboard where you can open them in a model or delete them.  This App uses vanilla JS Html and CSS</p>
-                    <button class="card-button p-btn1"><a href="note-app/noteapp.html" target="_blank" class="card-button-link">Check it Out</a></button>
-                    <button class="p-btn-rep1"><a href="https://github.com/ItsAnyaS/Note-App-" target="_blank" class="card-button-link">See the Code</a></button>
-                </div>
-                <div class="projects__card2">
-                    <h1 class="projects__card--header">Memory Game</h1>
-                    <p class="projects__card--par">A card matching memory game filled with little bundles of wiskers.  The game randomly generates a new layout every time so it will never get boring.  This App uses vanilla JS Html and CSS</p>
-                    <button class="card-button p-btn2"><a href="memory-game/memorygame.html" target="_blank" class="card-button-link">Play Now</a></button>
-                    <button class="p-btn-rep2"><a href="https://github.com/ItsAnyaS/Memory-game" target="_blank" class="card-button-link">See the Code</a></button>
-                    </div>
-                <div class="projects__card3">
-                    <h1 class="projects__card--header">Knots and crosses</h1>
-                    <p class="projects__card--par ">I created a knots and crosses video game where the plater can play against a computer or agianst another person using python</p>
-                </div>
-                <div class="projects__card4">
-                    <h1 class="projects__card--header">Vowel Counting App</h1>
-                    <p class="projects__card--par">A reponsive app that can take any text and find the english vowel count.  This App uses vanilla JS Html and CSS</p>
-                    <button class="card-button p-btn3"><a href="vowel-counter/vowelcounter.html" target="_blank" class="card-button-link">Have a Look</a></button>
-                    <button class="p-btn-rep3"><a href="https://github.com/ItsAnyaS/Vowel-Counter" target="_blank" class="card-button-link">See the Code</a></button>
-                </div>
-        </div>
-    </div>
-    <div class="contact" id="contact__link">
-        <div class="contact__container">
-            <dic class="contact__content">
-                <h1 class="contact__header">Say Hi!</h1>
-                <p class="contact__name">Anastasia Sirman</p>
-                <p class="contact__number">(347)-825-9968</p>
-                <p class="contact__email">anyasirman@outlook.com</p>
-                <div class="social__media">
-                       <a href="https://twitter.com/anyasirman/" target="_blank" class="social__media--link"><ion-icon name="logo-twitter"></ion-icon></a>
-                       <a href="https://github.com/ItsAnyaS" target="_blank" class="social__media--link"><ion-icon name="logo-github"></ion-icon></a>
-                        <a href="https://www.linkedin.com/in/anastasiasirman/" target="_blank" class="social__media--link"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    </div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <div class="copyright__content">
-            <h1 class="copyright__info">© 2022 Anastasia Sirman</h1>
-        </div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script SRC='app.js'></script>
-</body>
-</html>
+.dark {
+    background-color: var(--dark-mode-main-color);
+    color: var(--dark-mode-text-color);
+
+}
+
+body {
+    background: var(--background-color);
+    margin: 0;
+    height: auto;
+    border-left: var(--accent-color);
+    border-right: var(--accent-color);
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-right-style: solid;
+    border-right-width: 5px;
+    overflow-x: hidden;
+}
+/*============
+=======Navbar====
+===============*/
+.navbar.dark{
+    background-color: var(--dark-mode-main-color);
+}
+/*.navbar__btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 14px;
+    border-style: solid;
+    background-color: var(--background-color);
+    font-weight: 500;
+    border: none;
+
+}
+*/
+
+.navbar {
+    background-color: var(--background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    margin: 0 2rem;
+}
+
+.logo {
+    height: 80px;
+    margin-left: 0rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+    position: relative;
+    
+}
+
+.navbar__links {
+    color: var(--accent-color);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-weight: 500;
+}
+
+
+.navbar__item::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    background-color: #aca6ff;
+    margin: 0 5px;
+    transform: translateY(-70px);
+    transition: all 200ms ease-in;
+}
+
+.navbar__item.dark:hover::before{
+    background-color: var(--background-color);
+}
+
+.navbar__item:hover::before{
+    width: 90%;
+}
+
+
+
+@media screen and (max-width:960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .navbar__menu.active {
+        background: var(--accent-color);
+        top: 100%;
+        opacity: 0.8;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 400px;
+        font-size: 1.6rem;
+    }
+
+    .navbar__links:hover::before{
+         display: none;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: black;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar__links:hover{
+        transform: scale(1.05);
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/*============
+=======Main====
+===============*/
+
+.main {
+height: 75vh;
+    width: 100%;
+}
+
+
+.main__content {
+   display: flex;
+   justify-content: center;
+}
+.main__stack {
+    text-align: center;
+    margin-top: 12rem;
+    margin-left: 25px;
+}
+
+.main__header {
+    font-weight: 200;
+}
+
+.main__header2 {
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+.main__par {
+    font-weight: 200;
+}
+
+.you {
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
+.main__img {
+    margin-left: 175px;
+    margin-top: 5rem;
+    height: 400px;
+    border-radius: 15%;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 775px) {
+
+
+    .main {
+        height: 100vh;
+    }
+    .main__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main__stack {
+        margin-right: 25px;
+    }
+    
+    .main__img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+}
+
+/*============
+=======About====
+===============*/
+
+.about {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about__content {  
+    margin: 10rem 15rem;
+    text-align: center;
+
+}
+
+.about__header {
+    
+}
+
+.aesthetic {
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
+.functionality{
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        height: 130vh;
+    
+    }
+
+.about__content {  
+    margin: 10rem 5rem;
+    text-align: center;
+
+}
+    
+}
+
+
+/*==================
+======MY Tech=======
+==================*/
+
+
+.my-tech-container{
+height: 50vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+.my-tech-header{
+
+}
+
+.tech-container{
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+/*============
+=======Projects====
+===============*/
+
+
+
+.projects {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects__header {
+    margin: 0;
+}
+
+.most__recent__projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.projects__card2 > p {
+    margin-top: -30px;
+}
+
+.projects__container {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projects__card1 {
+    height: 290px;
+    background: url(images/project1.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+.projects__card2 {
+    height: 290px;
+    background: url(images/project2.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+} 
+.projects__card3 {
+    height: 290px;
+    background: url(images/project3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.projects__card4 {
+    height: 290px;
+    background: url(images/project4.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+
+
+.projects__card h1 {
+    text-align: center;
+}
+
+
+.projects__card--header {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.projects__card--par {
+    padding: 20px 0 20px 20px;
+    padding-top: 60px;
+    font-weight: 400;
+    color: black;
+}
+
+.card-button {
+    border: solid black 1px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: transparent;
+    padding: 5px 7px;
+}
+
+.p-btn1{
+    position: absolute;
+    height: 30px;
+    margin: 0 20px;
+    margin-top: -15px;
+}
+
+.p-btn-rep1{
+    position: absolute;
+    background-color: transparent;
+    border: solid black 1px;
+    margin-top: -15px;
+    margin-left: 140px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 7px;
+}
+
+.p-btn-rep2{
+    position: absolute;
+    background-color: transparent;
+    border: solid black 1px;
+    margin-top: -15px;
+    margin-left: 120px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 7px;
+}
+
+.p-btn-rep1:hover{
+    transform: scale(1.05);
+}
+
+.p-btn-rep2:hover{
+    transform: scale(1.05);
+}
+
+.p-btn2{
+    position: absolute;
+    height: 30px;
+    margin: 0 20px;
+    margin-top: -15px;
+}
+
+.p-btn3 {
+    position: absolute;
+    height: 30px;
+    margin: 0 20px;
+    margin-top: -15px;
+}
+
+.p-btn-rep3{
+    position: absolute;
+    background-color: transparent;
+    border: solid black 1px;
+    margin-top: -15px;
+    margin-left: 135px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 7px;
+}
+
+.p-btn-rep3:hover {
+    transform: scale(1.05);
+}
+
+.card-button:hover {
+    transform: scale(1.05);
+}
+
+.card-button-link {
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .projects__container {
+        margin-top: 1rem;
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    }
+  
+
+    .projects__card1 {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+       
+    }
+
+    .projects__card2 {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    .projects__card3 {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+    }
+
+    .projects__card4 {
+        align-self: center;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+    }
+
+
+  
+}
+
+ 
+
+/*============
+=======Contact====
+===============*/
+
+.contact {
+ margin: 15rem 0;
+    width: 100%;
+}
+
+.contact__container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.contact__header {
+    font-size: 3rem;
+    color: var(--accent-color);
+}
+
+.contact__header:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.contact p {
+    font-size: 1.25rem;
+}
+
+.contact p:hover {
+    transform: scale(1.05);
+    color: #484554;
+}
+
+/*============
+=======Social media====
+===============*/
+.social__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.social__media--li {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+ion-icon {
+    padding: 0 25px;
+    font-size: 35px;
+    color: var(--accent-color);
+}
+
+/*============
+=======Copyright====
+===============*/
+
+.copyright__info {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blink{
+    animation: blinker 1s linear infinite;
+}
+
+
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
