@@ -330,6 +330,39 @@ height: 75vh;
 }
 
 
+/*==================
+======MY Tech=======
+==================*/
+
+
+.my-tech-container{
+height: 50vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+.my-tech-header{
+
+}
+
+.tech-container{
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
+
 
 
 /*============
