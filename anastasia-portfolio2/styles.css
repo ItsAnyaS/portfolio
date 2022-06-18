@@ -359,11 +359,25 @@ flex-direction: column;
 }
 
 .img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
 
+@media screen and (max-width: 900px) {
 
+
+.tech-container{
+    display: none;
+    height: 50vh;
+    margin-top: -50rem;
+}
+
+    .img{
+        display: none;
+        height: 75px;
+        width: 75px;
+    }
+}
 
 /*============
 =======Projects====
