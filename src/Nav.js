@@ -24,10 +24,10 @@ const Nav = () => {
     return (
         <nav className='navbar'>
         <div className='logo'>
-          <img id='logo-img' src='./logo.png'/>
+          <img alt='AS' id='logo-img' src='./logo.png'/>
         </div>
-        <a className='nav-item' href=''>Home</a>
-        <a className='nav-item' href=''>About</a>
+        <a className='nav-item' href='/'>Home</a>
+        <a className='nav-item' href='/'>About</a>
         <a href='#projects' className='nav-item' >Projects</a>
         <a href="#contact"  className='nav-cta-btn'>
           Say Hi!
@@ -37,14 +37,14 @@ const Nav = () => {
       return (
         <nav className="navbar">
         <div className="logo">
-        <img id='logo-img' src='./logo.png'/>
+        <img id='logo-img' alt='AS' src='./logo.png'/>
         </div>
 
         <button onClick={()=> {setIsActive(true)}} className='menu-icon'><ion-icon  name="menu-outline"></ion-icon></button>
         { isActive && <div id="nav-model" onClick={()=> {setIsActive(false)}}>
         <div id='nav-model-container' onClick={(e)=> {e.stopPropagation()}}>
-        <a className='nav-item' onClick={()=> {setIsActive(false)}} href=''>Home</a>
-        <a className='nav-item' onClick={()=> {setIsActive(false)}} href=''>About</a>
+        <a className='nav-item' onClick={()=> {setIsActive(false)}} href='/'>Home</a>
+        <a className='nav-item' onClick={()=> {setIsActive(false)}} href='/'>About</a>
         <a href='#projects' onClick={()=> {setIsActive(false)}} className='nav-item' >Projects</a>
         <a href="#contact" onClick={()=> {setIsActive(false)}}  className='nav-cta-btn model-btn'>Say Hi!</a>
         </div>

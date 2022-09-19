@@ -13,10 +13,7 @@ const Projects = () => {
           </p>
               </div>
           <div className='laptop-card' >
-          {/* <img className='card1-bg' src='arther-bg.png'/> */}
           </div>
-          {/* <button className='card-btn card-btn-1'>Check it out</button>
-          <button className='card-btn card-btn-2' >See the repo</button> */}
             </div>
             <div className='project-item-container middle-project-container'>
               <div className='project-text-container'>
@@ -28,11 +25,9 @@ const Projects = () => {
           </p>
               </div>
           <div className='laptop-card2' >
-          {/* <img className='card2-bg' src='bananBG.png'/> */}
+
           </div>
-          {/* <img className='card1-bg' src='comp-BG.png'/> */}
-          {/* <button className='card-btn card-btn-1'>Check it out</button>
-          <button className='card-btn card-btn-2' >See the repo</button> */}
+        
             </div>
             <div className='project-item-container'>
               <div className='project-text-container'>
@@ -45,9 +40,6 @@ const Projects = () => {
               </div>
           <div className='laptop-card' >
             </div>
-          {/* <img className='card1-bg' src='comp-BG.png'/> */}
-          {/* <button className='card-btn card-btn-1'>Check it out</button>
-          <button className='card-btn card-btn-2' >See the repo</button> */}
             </div>
           </div>
           
