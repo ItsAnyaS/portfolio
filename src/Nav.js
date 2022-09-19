@@ -20,7 +20,6 @@ const Nav = () => {
 
   }, [])
 
-  console.log(isHamburger)
   if (!isHamburger){
     return (
         <nav className='navbar'>
