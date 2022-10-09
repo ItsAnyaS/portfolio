@@ -27,8 +27,8 @@ const Nav = () => {
           <img alt='AS' id='logo-img' src='./logo.png'/>
         </div>
         <a className='nav-item' href='/'>Home</a>
-        <a className='nav-item' href='/'>About</a>
         <a href='#projects' className='nav-item' >Projects</a>
+        <a className='nav-item' href='./Anastasia_Sirman_resume.pdf' download >Resume</a>
         <a href="#contact"  className='nav-cta-btn'>
           Say Hi!
         </a>
@@ -44,8 +44,8 @@ const Nav = () => {
         { isActive && <div id="nav-model" onClick={()=> {setIsActive(false)}}>
         <div id='nav-model-container' onClick={(e)=> {e.stopPropagation()}}>
         <a className='nav-item' onClick={()=> {setIsActive(false)}} href='/'>Home</a>
-        <a className='nav-item' onClick={()=> {setIsActive(false)}} href='/'>About</a>
         <a href='#projects' onClick={()=> {setIsActive(false)}} className='nav-item' >Projects</a>
+        <a className='nav-item' onClick={()=> {setIsActive(false)}} href='/public/arthur-BG.png' download >Resume</a>
         <a href="#contact" onClick={()=> {setIsActive(false)}}  className='nav-cta-btn model-btn'>Say Hi!</a>
         </div>
         </div>}
