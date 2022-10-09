@@ -339,6 +339,18 @@ max-width: 30%;
   position: relative;
 }
 
+.laptop-card3 {
+  width: 60%;
+  z-index: 10;
+  height: 500px;
+  background-image: url("../public/laptop3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  margin-top: 40px;
+  position: relative;
+}
+
 
 .card1-bg{
   width: 73%;
@@ -575,4 +587,25 @@ animation: rotate-diagonal-2 0.4s linear both;
   }
 }
 
+
+.project-btn{
+  border: 1px solid #8C84FF;
+  background-color: transparent;
+  color: #8C84FF;
+  margin-right: 15px;
+  border-radius: 26px;
+  font-size: 1.2em;
+  padding: 4px 16px;
+  cursor: pointer
+}
+
+.project-btn:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.project-btn a {
+  text-decoration: none;
+  color: #8C84FF;
+}
 
