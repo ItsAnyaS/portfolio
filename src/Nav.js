@@ -28,7 +28,7 @@ const Nav = () => {
         </div>
         <a className='nav-item' href='/'>Home</a>
         <a href='#projects' className='nav-item' >Projects</a>
-        <a className='nav-item' href='Anastasia_Sirman_resume.pdf' >Resume</a>
+        <a className='nav-item' target="_blank" href='Anastasia_Sirman_resume.pdf' >Resume</a>
         <a href="#contact"  className='nav-cta-btn'>
           Say Hi!
         </a>
