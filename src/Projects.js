@@ -3,11 +3,25 @@ const Projects = () => {
         <div className='projects' id='projects'>
           <div className='project-spacer'></div>
           <div className='project-slider'>
-            <div className='project-item-container'>
+
+          <div className='project-item-container'>
               <div className='project-text-container'>
           <h3>
-           Callbck
+            POS
           </h3>
+          <p>
+          POS is a Point of sale terminal designed to work on any platform with limited computing power. This app uses, ReactTs, ExpressJs, js-cookies, bcrypt, JWT and js-cookies. 
+          </p>
+          <button className="project-btn"><a href="https://github.com/ItsAnyaS/POS" target='_blanck'>Repo</a></button>
+          <button className="project-btn"><a href="https://point-of-sale.herokuapp.com/" target='_blanck'>View Site</a></button>
+          {/* <button className="project-btn">View Demo</button> */}
+              </div>
+              <div className='laptop-card'></div>
+            </div>
+
+            <div className='project-item-container'>
+              <div className='project-text-container'>
+            <h3>Callbck</h3>
           <p>
             With Callbck dancers no longer need to wonder if they got the role or if they were out of the runnings a long time ago.  Callbck creates an all in one ecosystem for companies to post auditions for dancers, send callbcks, mark dancers as hired and remove them from the running.
           </p>
@@ -33,20 +47,7 @@ const Projects = () => {
           </div>
         
             </div>
-            <div className='project-item-container'>
-              <div className='project-text-container'>
-          <h3>
-            Arther
-          </h3>
-          <p>
-          Arther is a website that connect freelancers to cosumers.  Built with ReactJS, Ruby on Rails and postgreSQL Arther is easily scalable.
-          </p>
-          <button className="project-btn">Repo</button>
-          {/* <button className="project-btn">View Demo</button> */}
-              </div>
-          <div className='laptop-card' >
-            </div>
-            </div>
+          
           </div>
           
         </div>
